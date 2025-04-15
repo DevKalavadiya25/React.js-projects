@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  border: none;
+
+}
+body{
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg?t=st=1744707214~exp=1744710814~hmac=c67341daa31ce70437f78a70057125c83b54e0ae7f2d4da5b5e8860d2a276bd3&w=1380');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 12px 1px 15px rgba(0, 0, 0, 0.5);  ;
+  /* heading gradient */
+  color: #ED58E6; 
+  background-image: linear-gradient(45deg, #ED58E6 28%, #B480E8 29%, #D5D9A7 , #EB7AAD 59%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+ font-weight:700;
+  -webkit-text-fill-color: transparent; 
+}
+input{
+  padding:7px;
+  border:none;
+  border-radius: 5px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  background-color:transparent;
+  backdrop-filter: blur(12px);
+  /* margin: 0 auto; */
+}
+input::placeholder{
+  color: #eee9e9;
+  display: flex;
+  text-align: center;
+}
+.inpt{
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.inpt:focus{
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+button{
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+button:hover{
+  background-color: #0056b3;
+}
+table {
+  width: 100%;
+  font: 1em 'Poppins', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height:2;
+  margin-top: 20px;
+  background-color: transparent; /* Make the table background transparent */
+  backdrop-filter: blur(25px); 
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border-collapse: collapse;
+} 
+table:hover {
+  background-color: rgba(31, 24, 24, 0.1); /* Slightly visible on hover */
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: none;
+  color: #09161d;
+  background-color: transparent;
+}
+
+th {
+  border-bottom: #0e0e0e 1px solid;
+}
+td {
+  border-bottom: #e6acc4 1px solid;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9em; 
+  }
+}
+  th, td {
+    padding: 8px; 
+}
+
+@media (max-width: 480px) {
+  table {
+    font-size: 0.8em; 
+  }
+
+  th, td {
+    padding: 5px; 
+  }
+
+  /* Make the table scrollable horizontally */
+  .table-container {
+    overflow-x: auto;
+  }
+}
