@@ -1,0 +1,88 @@
+.crud-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.crud-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.crud-form input, .crud-form select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.crud-form button {
+  margin: 0 auto;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+.crud-form .cancel-btn {
+  background: #ff6ec4;
+  margin-left: 4px;
+}
+.crud-form button:hover {
+  background: #0056b3;
+}
+.crud-form .cancel-btn:hover {
+  background: #444;
+}
+.crud-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.crud-table th, .crud-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+.crud-table th {
+  background: #7f5af0;
+  color: #fff;
+}
+.crud-table td {
+  font-size: 0.98em;
+}
+.edit-btn, .delete-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 4px;
+  font-size: 0.95em;
+}
+.edit-btn {
+  background: #1fd1f9;
+  color: #222;
+}
+.edit-btn:hover {
+  background: #f39c12;
+  color: #fff;
+}
+.delete-btn {
+  background: #ff6e6e;
+  color: #fff;
+}
+.delete-btn:hover {
+  background: #c0392b;
+}

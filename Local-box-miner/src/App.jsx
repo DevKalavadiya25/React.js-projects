@@ -1,9 +1,23 @@
-import React, { useState } from "react";
-import "./Apps.css"; // Assuming you have some basic styles in App.css
-function App() {
+import React, { useState, useEffect } from "react"
+import  "./Apps.css";
+
+const LOCAL_KEY = "users-data";
+
+const App = () => {
   const [users, setUsers] = useState([]);
   const [form, setForm] = useState({ name: "", email: "", gender: "" });
   const [editIdx, setEditIdx] = useState(null);
+
+  // Load users from localStorage on mount
+  useEffect(() => {
+    const data = localStorage.getItem(LOCAL_KEY);
+    if (data) setUsers(JSON.parse(data));
+  }, []);
+
+  // Save users to localStorage whenever users change
+  useEffect(() => {
+    localStorage.setItem(LOCAL_KEY, JSON.stringify(users));
+  }, [users]);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -23,7 +37,7 @@ function App() {
   };
 
   const handleEdit = (idx) => {
-    setForm(users[idx]);
+    setForm({ ...users[idx] });
     setEditIdx(idx);
   };
 
@@ -62,11 +76,11 @@ function App() {
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
-        <button className="neon-btn" type="submit">{editIdx !== null ? "Update" : "Add"}</button>
+        <button className="" type="submit">{editIdx !== null ? "Update" : "Add"}</button>
         {editIdx !== null && (
           <button 
             type="button"
-            className="cancel-btn neon-btn"
+            className="cancel-btn"
             onClick={() => {
               setForm({ name: "", email: "", gender: "" });
               setEditIdx(null);
@@ -99,7 +113,7 @@ function App() {
                 <td>{u.email}</td>
                 <td>{u.gender}</td>
                 <td>
-                  <button className="edit-btn" onClick={() => handleEdit(i)}>
+                  <button className="edit-btn " onClick={() => handleEdit(i)}>
                     Edit
                   </button>
                   <button className="delete-btn" onClick={() => handleDelete(i)}>
@@ -113,6 +127,6 @@ function App() {
       </table>
     </div>
   );
-}
+};
 
 export default App;
