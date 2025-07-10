@@ -5,7 +5,7 @@ const App = () => {
   const [userData, setUserData] = useState([
     { id: 1, name: "Dev Kalavadiya", city: "Ahmedabad", phone: "6351027376", totalSelling: 120, totalAmount: 40000, status: "Paid" },
     { id: 2, name: "Rajvi Patel", city: "Surat", phone: "9123456789", totalSelling: 90, totalAmount: 32000, status: "Pending" },
-    { id: 3, name: "Karan Shah", city: "Vadodara", phone: "9012345678", totalSelling: 70, totalAmount: 25000, status: "Paid" },
+    { id: 3, name: "Digpal Vala", city: "Vadodara", phone: "9012345678", totalSelling: 70, totalAmount: 25000, status: "Paid" },
     { id: 4, name: "Priya Mehta", city: "Rajkot", phone: "9988776655", totalSelling: 150, totalAmount: 60000, status: "Pending" },
     { id: 5, name: "Mehul Desai", city: "Ahmedabad", phone: "9765432109", totalSelling: 40, totalAmount: 15000, status: "Paid" },
     { id: 6, name: "Ankita Joshi", city: "Surat", phone: "9090909090", totalSelling: 60, totalAmount: 20000, status: "Pending" },
@@ -17,7 +17,7 @@ const App = () => {
     { id: 12, name: "Priya Mehta", city: "Rajkot", phone: "9988776655", totalSelling: 150, totalAmount: 60000, status: "Pending" },
     { id: 13, name: "Mehul Desai", city: "Ahmedabad", phone: "9765432109", totalSelling: 40, totalAmount: 15000, status: "Paid" },
     { id: 14, name: "Ankita Joshi", city: "Surat", phone: "9090909090", totalSelling: 60, totalAmount: 20000, status: "Pending" },
-    { id: 15, name: "Bhavin Rana", city: "Rajkot", phone: "9123987654", totalSelling: 85, totalAmount: 28000, status: "Paid" },
+    { id: 15, name: " Milan Maru", city: "Rajkot", phone: "9123987654", totalSelling: 85, totalAmount: 28000, status: "Paid" },
     { id: 16, name: "Nirali Shah", city: "Vadodara", phone: "8899776655", totalSelling: 130, totalAmount: 50000, status: "Pending" },
   ]);
 
